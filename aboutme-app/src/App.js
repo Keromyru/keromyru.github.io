@@ -4,6 +4,7 @@ import NavComponent from './navigation/NavComponent';
 import {Route, Routes} from 'react-router-dom';
 import ResumePage from './resume/ResumePage';
 import WelcomePage from './WelcomePage';
+import TableData from './features/TableData';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route exact path="/" element={<WelcomePage/>} />
         <Route path="/resume" element={<ResumePage/>}/>
       </Routes>
+      <TableData/>
     </div>
   );
 }

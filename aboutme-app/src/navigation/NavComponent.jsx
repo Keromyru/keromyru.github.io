@@ -9,6 +9,9 @@ export default function NavComponent() {
 			<h1>Aurora Dubnyk</h1>
 			<p>Web App Developer</p>
 			<Link to="/resume">Resume</Link>
+			<div>
+				
+			</div>
 		</div>
 		</>
 	)
