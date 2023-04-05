@@ -1,0 +1,93 @@
+[
+  { 
+    "companyName" : "Celtx",
+    "desc": "old place",
+    "jobtitle": "Junior Web Developer",
+    "durationStart": "May 2020",
+    "durationEnd": "November 2022",
+    "tasks": [
+      {
+        "resumeblurb": "Common tasks included bug fixes throughout the entirety of the Celtx SaaS application, handled various feature development & implementation, maintained excellent User Interface/User Experience (UI/UX), and ensured quality of work completed.",
+        "skills": [
+            "Jira", 
+            "UI/UX", 
+            "Quality Assurance", 
+            "Javascript", 
+            "Typescript",
+            "Git",
+            "React.js"
+          ]
+      },
+      {
+        "resumeblurb": "Solely researched, designed and implemented an complex but flexible integration with Google Docs & Drive APIs for call sheet exporting to better facilitate clients' need for customizations via Google Docs, and allow for better sharing control of call sheets through Google Drive.", 
+        "skills": [
+          "Integration",
+          "Google Docs API",
+          "Google Drive API",
+          "Javascript",
+          "React.js",
+          "CSS/Less"
+          ]
+      },
+      {
+        "resumeblurb": "Collaborated with a colleague while building a JSON data transform and export microservice built in Typescript and Node.js. The microservice was deployed as an AWS lambda for clients to fetch entire project's worth of data, transformed from a custom binary format to JSON, to integrate and automate into their unique pipelines.",
+        "skills": [
+          "AWS Lambda",
+          "Microservice",
+          "Pair Programming",
+          "Node.js",
+          "Typescript",
+          "JSON"
+        ]
+      },
+      {
+        "resumeblurb": "Wrote Selenium, Mocha, and Jest tests for various aspects of the product and microservices to increase test coverage and greatly reduce regression bugs before deployment.",
+        "skills": [
+          "Selenium",
+          "Java",
+          "Jest",
+          "Javascript",
+          "Mocha",
+          "Node.js"
+        ]
+      },
+      {
+        "resumeblurb": "Increased documentation quality and quantity via in code comments, docstrings, READMEs, Confluence documents, & Jira comments, leading to faster development times, greater maintainability, accurate scoping of requirements, better communication with and understanding from colleagues.",
+        "skills": [
+          "Documenation",
+          "Technical Writing",
+          "Confluence"
+        ]
+      },
+      {
+        "resumeblurb": "Begun work in creating a maintainable JSON schema and JSON data validator tool to support a partnered bi-directional API, and allow for greater error tracing of corrupted or erroneous data.",
+        "skills": [
+          "JSON Schema",
+          "Data Validation"
+        ]
+      },
+      {
+        "resumeblurb": "Communicated directly with various Game Studio clients to scope desired features for a partnered bi-directional API to ensure the tools they needed would be available to them.",
+        "skills":[
+          "Communication",
+          "Requirement Scoping"
+        ]
+      }
+    ]
+  },
+  {
+    "companyName" : "Starbucks",
+    "desc": "old place",
+    "jobtitle": "Barista/Shift supervisor",
+    "durationStart": "April 2012",
+    "durationEnd": "November 2020",
+    "tasks": [
+      {"resumeblurb": "coached baristas", 
+      "skills": [
+        "communication",
+        "developement"
+        ]} 
+    ]
+  }
+
+]
