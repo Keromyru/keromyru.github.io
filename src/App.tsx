@@ -3,7 +3,7 @@ import NavComponent from './navigation/navigation-component';
 import {Route, Routes} from 'react-router-dom';
 import ResumePage from './pages/resumepage';
 import WelcomePage from './pages/welcomepage';
-import styled, {createGlobalStyle, DefaultTheme, ThemeProvider} from 'styled-components';
+import styled, {createGlobalStyle, DefaultTheme, keyframes, ThemeProvider} from 'styled-components';
 
 const App: React.FC = () => {
   const theme: DefaultTheme = {
@@ -13,6 +13,7 @@ const App: React.FC = () => {
       greenHighlight: "#67E0A3",
       pinkHighlight: "#CC92C2",
       purpleAccent: "#A79AB2",
+      backgroundGradient: "linear-gradient(65deg, #67e0a3 0%, #cc92c2 50.48%, #90809D 82%, #4F928B 100% )",
     }
   }
   return (
@@ -21,7 +22,9 @@ const App: React.FC = () => {
       <StyledApp className="App">
         <NavComponent/>
         <div className='app-body-container'>
-          <div className='table-of-contents'>Table of contents</div>
+          <Sidebar >
+            <div className='table-of-contents'>Table of contents</div>
+          </Sidebar>
           <Routes>
             <Route path="/" element={<WelcomePage/>} />
             <Route path="/resume" element={<ResumePage/>}/>
@@ -34,11 +37,26 @@ const App: React.FC = () => {
   );
 }
 
+const gradient = keyframes`
+0% {
+  background-position: 0 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0 50%;
+}
+`;
+
 const GlobalStyle = createGlobalStyle`
   body {
     width: 100%;
     height: 100%;
-    background-color: ${({theme}) => theme.palette.darkgrey};
+    animation: ${gradient} 10s ease-in-out infinite;
+    background: ${({theme}) => theme.palette.backgroundGradient};
+    background-attachment: fixed;
+    background-size: 200%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -50,6 +68,10 @@ const GlobalStyle = createGlobalStyle`
 
 const StyledApp = styled.div`
   text-align: center;
+`
+const Sidebar = styled.div`
+  float: left;
+  width: 10vw;
 `
 
 export default App;

@@ -14,6 +14,7 @@ declare module "styled-components" {
       greenHighlight: string;
       pinkHighlight: string;
       purpleAccent: string;
+      backgroundGradient: string;
     };
   }
 }
