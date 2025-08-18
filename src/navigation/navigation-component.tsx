@@ -19,6 +19,7 @@ const NavComponent: React.FC = () => {
 
 const StyledNavContainer = styled.div`
 	background-color: ${({theme}) => theme.palette.lightgrey};
+	opacity: .5;
 `
 
 export default NavComponent;
