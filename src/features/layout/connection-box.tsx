@@ -1,6 +1,5 @@
 import React from "react";
 import SkillBubble from "../skillbubbles";
-import {v4 as uuidv4} from 'uuid';
 
 type Props = {
   blurb: string,
@@ -17,7 +16,7 @@ const ConnectionBox: React.FC<Props> = ({blurb, skills}) => {
   const renderSkills = () => {
     return skills.map( (skill, index) => {
       return (
-        <SkillBubble key={uuidv4()} skillBlurb={skill} />
+        <SkillBubble key={index} skillBlurb={skill} />
       )
     })
   }
